@@ -38,24 +38,43 @@
            left: 65%;
            transform: translate(-50%);
         }
+        footer {
+            display: inline-block;
+            width: 100%;
+            position: fixed;
+            bottom: 0%;
+            padding: 1px 10px;
+        }
     </style>
 </head>
 <body>
-    <div class="background"> </div>
-    <div>
-        <ul>
-            <li>About</li>
-            <li>Store</li>
-            <li style="float: right; margin-right: 50px;">Images</li>
-            <li style="float:right">Gmail</li>
-        </ul>
+    <div class="background">
+        <header>
+            <ul>
+                <li>About</li>
+                <li>Store</li>
+                <li style="float: right; margin-right: 50px;">Images</li>
+                <li style="float:right">Gmail</li>
+            </ul>
+        </header>
         <p class="aligncenterpage">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
         </p>
         <p class="searchbar searchinput">
         <input type="text" placeholder="Search" size="70">
         <button class="buttonGS" type="submit"> Google Search</button>
         <button class="buttonlucky" type="submit">I'm Feeling Lucky</button>
         </p>
+        <footer style="background-color: #f2f2f2;">
+            <ul>
+                <li>Advertising</li>
+                <li>Business</li>
+                <li>How Search works</li>
+                <li style="margin-left: 200px;">Carbon neutral since 2007</li>
+                <li style="float: right; margin-right: 50px;">Settings</li>
+                <li style="float: right;">Terms</li>
+                <li style="float: right;">Privacy</li>
+            </ul>
+        </footer>
     </div>
 </body>
