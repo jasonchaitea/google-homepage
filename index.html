@@ -1,10 +1,21 @@
 <!DOCTYPE HTML>
 <head>
+<!--    
+  First things first:
+Put the styles inside of its own external css file (  <link rel="stylesheet" href="styles.css"> )
+Look at this page https://www.w3schools.com/html/html_css.asp
+Use the "External CSS" section for reference. It'll clean up your `index.html`, and make it a LOT easier to work with
+It'll be super easy, you just create a "style.css" file, and copy and paste everything inside of your <style> tags
+
+-->
     <style>
         .background {
             background-color: white;
         }
+        /* Well done! You just achieved the most complicated css thing. Center aligning lmao  */
         .aligncenterpage {
+          /* If you want to use flexbox, this would be a great spot to start. Center             */
+          /*  */
            position: fixed;
            top: 30%;
            left: 50%;
@@ -65,6 +76,11 @@
         <button class="buttonGS" type="submit"> Google Search</button>
         <button class="buttonlucky" type="submit">I'm Feeling Lucky</button>
         </p>
+        <!-- 
+          generally, having your style in-line 
+          (in line meaning you have style="background-color" on your html)
+          is a no-no. Instead, add a class to your footer, and apply that style to the className in your style file
+        -->
         <footer style="background-color: #f2f2f2;">
             <ul>
                 <li>Advertising</li>
