@@ -1,0 +1,48 @@
+    .aligncenterpage {
+      /* If you want to use flexbox, this would be a great spot to start.*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-style: solid;
+        height: 100%;
+    }
+    .searchbar {
+       position: fixed;
+       top: 38%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       border-style: solid;
+    }
+    .searchinput {
+        height: auto;
+        width: auto;
+        border-style: solid;
+    }
+    li {
+        display: inline-block;
+        text-align: center;
+        padding: 14px 10px;
+        font-size: 14px;
+    }
+    .buttonGS {
+       position: fixed;
+       top: 200%;
+       left: 35%;
+       transform: translate(-50%);
+       border-style: solid;
+    }
+    .buttonlucky {
+       position: fixed;
+       top: 200%;
+       left: 65%;
+       transform: translate(-50%);
+       border-style: solid;
+    }
+    footer {
+        display: inline-block;
+        width: 100%;
+        position: fixed;
+        bottom: 0%;
+        padding: 1px 10px;
+        border-style: solid;
+    }

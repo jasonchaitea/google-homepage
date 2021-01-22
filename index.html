@@ -1,62 +1,6 @@
 <!DOCTYPE HTML>
 <head>
-<!--    
-  First things first:
-Put the styles inside of its own external css file (  <link rel="stylesheet" href="styles.css"> )
-Look at this page https://www.w3schools.com/html/html_css.asp
-Use the "External CSS" section for reference. It'll clean up your `index.html`, and make it a LOT easier to work with
-It'll be super easy, you just create a "style.css" file, and copy and paste everything inside of your <style> tags
-
--->
-    <style>
-        .background {
-            background-color: white;
-        }
-        /* Well done! You just achieved the most complicated css thing. Center aligning lmao  */
-        .aligncenterpage {
-          /* If you want to use flexbox, this would be a great spot to start. Center             */
-          /*  */
-           position: fixed;
-           top: 30%;
-           left: 50%;
-           transform: translate(-50%, -50%);
-        }
-        .searchbar {
-           position: fixed;
-           top: 38%;
-           left: 50%;
-           transform: translate(-50%, -50%);
-        }
-        .searchinput {
-            height: auto;
-            width: auto;
-        }
-        li {
-            display: inline-block;
-            text-align: center;
-            padding: 14px 10px;
-            font-size: 14px;
-        }
-        .buttonGS {
-           position: fixed;
-           top: 200%;
-           left: 35%;
-           transform: translate(-50%);
-        }
-        .buttonlucky {
-           position: fixed;
-           top: 200%;
-           left: 65%;
-           transform: translate(-50%);
-        }
-        footer {
-            display: inline-block;
-            width: 100%;
-            position: fixed;
-            bottom: 0%;
-            padding: 1px 10px;
-        }
-    </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="background">
@@ -68,19 +12,14 @@ It'll be super easy, you just create a "style.css" file, and copy and paste ever
                 <li style="float:right">Gmail</li>
             </ul>
         </header>
-        <p class="aligncenterpage">
+        <div class="aligncenterpage">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
-        </p>
+        </div>
         <p class="searchbar searchinput">
         <input type="text" placeholder="Search" size="70">
         <button class="buttonGS" type="submit"> Google Search</button>
         <button class="buttonlucky" type="submit">I'm Feeling Lucky</button>
         </p>
-        <!-- 
-          generally, having your style in-line 
-          (in line meaning you have style="background-color" on your html)
-          is a no-no. Instead, add a class to your footer, and apply that style to the className in your style file
-        -->
         <footer style="background-color: #f2f2f2;">
             <ul>
                 <li>Advertising</li>
